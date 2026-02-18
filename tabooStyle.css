@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(98, 98, 144);
+  font-family: monospace;
+}
+
+.taboo {
+  background-color: rgb(100, 100, 208);
+  margin: 0px auto;
+  text-align: center;
+
+  font-size: 60px;
+  color: beige;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.word {
+  background-color: rgb(33, 5, 104);
+  text-align: center;
+  margin: 10px auto;
+  width: 400px;
+  height: 220px;
+}
+
+.givenWord {
+  padding-top: 0.4px;
+  padding-bottom: 0.4px;
+  background-color: rgb(32, 74, 187);
+}
+.givenWord #headerWord {
+  color: white;
+}
+
+.givenWord #Word {
+  color: rgb(255, 183, 0);
+}
+.givenWord .descButton {
+  width: 100px;
+  height: 40px;
+}
+.desc {
+}
+
+.flexy {
+  background-color: rgb(36, 36, 76);
+  height: 615px;
+  display: flex;
+}
+.left {
+  width: 500px;
+  background-color: rgb(66, 51, 153);
+}
+
+.left .player {
+  background-color: rgb(83, 64, 192);
+  height: 20px;
+  text-align: center;
+  padding-top: 4px;
+  color: rgb(255, 255, 255);
+}
+.left .h {
+  background-color: rgb(83, 64, 192);
+  height: 20px;
+  text-align: center;
+  padding-bottom: 3px;
+  color: rgb(255, 183, 0);
+  font-size: 20px;
+}
+
+.left .score {
+  background-color: rgb(83, 64, 192);
+  height: 20px;
+  padding-left: 10px;
+  text-align: left;
+  padding-bottom: 3px;
+  color: rgb(13, 255, 0);
+  font-size: 20px;
+}
+
+.left img {
+  width: 300px;
+  height: 300px;
+  margin-left: 90px;
+}
+.left .iconPage {
+  background-color: rgb(29, 29, 109);
+  display: grid;
+  gap: 10px;
+}
+
+.iconPage button {
+  width: 100px;
+  width: 100px;
+}
+.left #scoreIT {
+  width: 500px;
+}
+
+.right {
+  width: 500px;
+  background-color: rgb(66, 51, 153);
+}
+
+.right .player {
+  background-color: rgb(83, 64, 192);
+  height: 20px;
+  text-align: center;
+  padding-top: 4px;
+  color: rgb(255, 255, 255);
+}
+.right .h {
+  background-color: rgb(83, 64, 192);
+  height: 20px;
+  text-align: center;
+  padding-bottom: 3px;
+  color: rgb(255, 183, 0);
+  font-size: 20px;
+}
+
+.right .score {
+  background-color: rgb(83, 64, 192);
+  height: 20px;
+  padding-left: 10px;
+  text-align: left;
+  padding-bottom: 3px;
+  color: rgb(13, 255, 0);
+  font-size: 20px;
+}
+
+.right img {
+  width: 300px;
+  height: 300px;
+  margin-left: 90px;
+}
+.right .iconPage {
+  background-color: rgb(29, 29, 109);
+  display: grid;
+  gap: 10px;
+}
+
+.iconPage button {
+  width: 100px;
+  width: 100px;
+}
+.right #scoreIT {
+  width: 500px;
+}
