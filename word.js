@@ -1,3 +1,36 @@
+window.addEventListener("DOMContentLoaded", () => {
+  // Grab your elements inside here
+  const leftSide = document.getElementById("leftIMG");
+  const rightSide = document.getElementById("rightIMG");
+
+  // Then redefine your functions to use these variables
+  window.setIconLeft = function (id) {
+    if (!leftSide) return;
+    if (id === "pirate") leftSide.src = "Pirate.png";
+    else if (id === "bigjosh") leftSide.src = "Big Josh.png";
+    else if (id === "gamerboy") leftSide.src = "GamerBoy.png";
+    else if (id === "knight") leftSide.src = "Knight.png";
+    else if (id === "princess") leftSide.src = "Princess.png";
+    else if (id === "witch") leftSide.src = "Witch.png";
+    else if (id === "nerd") leftSide.src = "Nerd.png";
+    else if (id === "lu") leftSide.src = "Lu.png";
+    else if (id === "zoe") leftSide.src = "Zoe.png";
+  };
+
+  window.setIconRight = function (id) {
+    if (!rightSide) return;
+    if (id === "pirate") rightSide.src = "Pirate.png";
+    else if (id === "bigjosh") rightSide.src = "Big Josh.png";
+    else if (id === "gamerboy") rightSide.src = "GamerBoy.png";
+    else if (id === "knight") rightSide.src = "Knight.png";
+    else if (id === "princess") rightSide.src = "Princess.png";
+    else if (id === "witch") rightSide.src = "Witch.png";
+    else if (id === "nerd") rightSide.src = "Nerd.png";
+    else if (id === "lu") rightSide.src = "Lu.png";
+    else if (id === "zoe") rightSide.src = "Zoe.png";
+  };
+});
+
 const wordtext = document.getElementById("Word");
 const badWords = document.getElementById("CannotWords");
 const description = document.getElementById("description");
@@ -148,30 +181,6 @@ function pickWord() {
   wordtext.innerHTML = text;
 }
 
-const leftSide = document.getElementById("leftIMG");
-
-function setIconLeft(id) {
-  if (id === "pirate") {
-    leftSide.src = "Images/Pirate.png";
-  } else if (id === "bigjosh") {
-    leftSide.src = "Images/Big Josh.png";
-  } else if (id === "gamerboy") {
-    leftSide.src = "Images/GamerBoy.png";
-  } else if (id === "knight") {
-    leftSide.src = "Images/Knight.png";
-  } else if (id === "princess") {
-    leftSide.src = "Images/Princess.png";
-  } else if (id === "witch") {
-    leftSide.src = "Images/Witch.png";
-  } else if (id === "nerd") {
-    leftSide.src = "Images/Nerd.png";
-  } else if (id === "lu") {
-    leftSide.src = "Images/Lu.png";
-  } else if (id === "zoe") {
-    leftSide.src = "Images/Zoe.png";
-  }
-}
-
 let scoreLeftText = document.getElementById("player1score");
 let scoreleft = 0;
 scoreLeftText.innerText = "Score: " + scoreleft;
@@ -187,31 +196,6 @@ function nameLeft() {
   const inputValue = guy1Name.value;
   nameTag.innerText = inputValue;
   namePicker1.style.visibility = "hidden";
-}
-
-// player 2
-const rightSide = document.getElementById("rightIMG");
-
-function setIconRight(id) {
-  if (id === "pirate") {
-    rightSide.src = "Images/Pirate.png";
-  } else if (id === "bigjosh") {
-    rightSide.src = "Images/Big Josh.png";
-  } else if (id === "gamerboy") {
-    rightSide.src = "Images/GamerBoy.png";
-  } else if (id === "knight") {
-    rightSide.src = "Images/Knight.png";
-  } else if (id === "princess") {
-    rightSide.src = "Images/Princess.png";
-  } else if (id === "witch") {
-    rightSide.src = "Images/Witch.png";
-  } else if (id === "nerd") {
-    rightSide.src = "Images/Nerd.png";
-  } else if (id === "lu") {
-    rightSide.src = "Images/Lu.png";
-  } else if (id === "zoe") {
-    rightSide.src = "Images/Zoe.png";
-  }
 }
 
 let scoreRightText = document.getElementById("player2score");
