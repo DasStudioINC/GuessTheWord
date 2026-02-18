@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tabooStyle.css" />
+  </head>
+  <body>
+    <div class="taboo">Guess The Word Game</div>
+    <div class="flexy">
+      <div class="left">
+        <p class="player">Player 1</p>
+        <p class="h" id="Guy1">Name</p>
+        <img id="leftIMG" src="Images/Nerd.png" />
+
+        <div id="leftside" class="iconPage">
+          <p>Change Icon</p>
+          <div
+            style="
+              width: auto;
+              overflow-x: auto;
+              white-space: nowrap;
+              border: 1px solid black;
+            "
+          >
+            <button id="Pirate" onclick="setIconLeft('pirate')">Pirate</button>
+            <button id="Big Josh" onclick="setIconLeft('bigjosh')">
+              Big Josh
+            </button>
+            <button id="Gamer Boy" onclick="setIconLeft('gamerboy')">
+              Gamer Boy
+            </button>
+            <button id="Knight" onclick="setIconLeft('knight')">Night</button>
+            <button id="Princess" onclick="setIconLeft('princess')">
+              Princess
+            </button>
+            <button id="Witch" onclick="setIconLeft('witch')">Witch</button>
+            <button id="Nerd" onclick="setIconLeft('nerd')">Nerd</button>
+            <button id="Lu" onclick="setIconLeft('lu')">Lu</button>
+            <button id="Zoe" onclick="setIconLeft('zoe')">Zoe</button>
+          </div>
+        </div>
+        <p class="score" id="player1score">Score:</p>
+        <button onclick="AddScoreLeft()" id="scoreIT">Score IT!</button>
+        <div id="namePicker1" style="visibility: visible;">
+          <input type="text" id="guy1name"placeholder="enter your name" />
+          <button onclick="nameLeft()">Submit</button>
+        </div>
+      </div>
+      <div class="word">
+        <div>ww</div>
+        <div class="givenWord">
+          <h1 id="headerWord">Your Word</h1>
+          <h1 id="Word">ww</h1>
+
+          <div id="description" class="desc"></div>
+        </div>
+
+        <h2 id="CannotWords"></h2>
+
+        <button onclick="pickWord()"></button>
+      </div>
+      <div class="right">
+        <p class="player">Player 2</p>
+        <p class="h" id="Guy2">Name</p>
+        <img id="rightIMG" src="Images/Nerd.png" />
+
+        <div id="rightside" class="iconPage">
+          <p>Change Icon</p>
+          <div
+            style="
+              width: auto;
+              overflow-x: auto;
+              white-space: nowrap;
+              border: 1px solid black;
+            "
+          >
+            <button id="Pirate" onclick="setIconRight('pirate')">Pirate</button>
+            <button id="Big Josh" onclick="setIconRight('bigjosh')">
+              Big Josh
+            </button>
+            <button id="Gamer Boy" onclick="setIconRight('gamerboy')">
+              Gamer Boy
+            </button>
+            <button id="Knight" onclick="setIconRight('knight')">Night</button>
+            <button id="Princess" onclick="setIconRight('princess')">
+              Princess
+            </button>
+            <button id="Witch" onclick="setIconRight('witch')">Witch</button>
+            <button id="Nerd" onclick="setIconRight('nerd')">Nerd</button>
+            <button id="Lu" onclick="setIconRight('lu')">Lu</button>
+            <button id="Zoe" onclick="setIconRight('zoe')">Zoe</button>
+          </div>
+        </div>
+        <p class="score" id="player2score">Score:</p>
+        <button onclick="AddScoreRight()" id="scoreIT">Score IT!</button>
+        <div id="namePicker2" style="visibility: visible;">
+          <input type="text" id="guy2name"placeholder="enter your name" />
+          <button onclick="nameRight()">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="word.js"></script>
+  </body>
+</html>
