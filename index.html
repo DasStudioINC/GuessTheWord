@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Das Word Game</title>
+    <link rel="icon" type="image/x-icon" href="/LogoIcon.ico" />
     <link rel="stylesheet" href="tabooStyle.css" />
   </head>
   <body>
-    <div class="taboo">Guess The Word Game</div>
+    <div class="taboo">
+      Guess The Word Game
+      <button onclick="showwordshot()">start game</button>
+    </div>
     <div class="flexy">
       <div class="left">
         <p class="player">Player 1</p>
         <p class="h" id="Guy1">Name</p>
-        <img id="leftIMG" src="Images/Nerd.png" />
+        <img id="leftIMG" src="Nerd.png" />
 
         <div id="leftside" class="iconPage">
           <p>Change Icon</p>
@@ -43,28 +47,33 @@
         </div>
         <p class="score" id="player1score">Score:</p>
         <button onclick="AddScoreLeft()" id="scoreIT">Score IT!</button>
-        <div id="namePicker1" style="visibility: visible;">
-          <input type="text" id="guy1name"placeholder="enter your name" />
+        <div id="namePicker1" style="visibility: visible">
+          <input type="text" id="guy1name" placeholder="enter your name" />
           <button onclick="nameLeft()">Submit</button>
         </div>
       </div>
-      <div class="word">
-        <div>ww</div>
+      <div class="word" id="wordshot">
+        <div style="color: red">v 0.00.001</div>
         <div class="givenWord">
           <h1 id="headerWord">Your Word</h1>
           <h1 id="Word">ww</h1>
 
-          <div id="description" class="desc"></div>
+          <div style="color: wheat" id="description" class="desc"></div>
         </div>
 
-        <h2 id="CannotWords"></h2>
+        <div class="wordsnot">
+          <h1 style="color: rgb(240, 132, 55)">Words You cannot use</h1>
+          <h2 style="color: crimson" id="CannotWords"></h2>
+        </div>
 
-        <button onclick="pickWord()"></button>
+        <div class="pickword"></div>
+        <button style="width: 200px" onclick="pickWord()">Next</button>
+        <button id="skips" onclick="skip()">Skips 3 left</button>
       </div>
       <div class="right">
         <p class="player">Player 2</p>
         <p class="h" id="Guy2">Name</p>
-        <img id="rightIMG" src="Images/Nerd.png" />
+        <img id="rightIMG" src="Nerd.png" />
 
         <div id="rightside" class="iconPage">
           <p>Change Icon</p>
@@ -95,8 +104,8 @@
         </div>
         <p class="score" id="player2score">Score:</p>
         <button onclick="AddScoreRight()" id="scoreIT">Score IT!</button>
-        <div id="namePicker2" style="visibility: visible;">
-          <input type="text" id="guy2name"placeholder="enter your name" />
+        <div id="namePicker2" style="visibility: visible">
+          <input type="text" id="guy2name" placeholder="enter your name" />
           <button onclick="nameRight()">Submit</button>
         </div>
       </div>
@@ -105,3 +114,4 @@
     <script src="word.js"></script>
   </body>
 </html>
+
