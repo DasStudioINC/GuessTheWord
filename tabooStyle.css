@@ -146,3 +146,11 @@ body {
 .right #scoreIT {
   width: 500px;
 }
+
+.wordsnot {
+  background-color: rgb(67, 67, 138);
+}
+
+.pickword {
+  display: flex;
+}
