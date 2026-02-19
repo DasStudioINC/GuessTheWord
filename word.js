@@ -153,7 +153,7 @@ function setIconLeft(id) {
   } else if (id === "gamerboy") {
     leftSide.src = "GamerBoy.png";
   } else if (id === "knight") {
-    leftSide.src = "Knight.png";
+    leftSide.src = "knight.png";
   } else if (id === "princess") {
     leftSide.src = "Princess.png";
   } else if (id === "witch") {
@@ -195,7 +195,7 @@ function setIconRight(id) {
   } else if (id === "gamerboy") {
     rightSide.src = "GamerBoy.png";
   } else if (id === "knight") {
-    rightSide.src = "Knight.png";
+    rightSide.src = "knight.png";
   } else if (id === "princess") {
     rightSide.src = "Princess.png";
   } else if (id === "witch") {
@@ -225,4 +225,5 @@ function nameRight() {
   nameTag2.innerText = inputValue;
   namePicker2.style.visibility = "hidden";
 }
+
 
