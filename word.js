@@ -149,7 +149,7 @@ function setIconLeft(id) {
   if (id === "pirate") {
     leftSide.src = "Pirate.png";
   } else if (id === "bigjosh") {
-    leftSide.src = "Big Josh.png";
+    leftSide.src = "BigJosh.png";
   } else if (id === "gamerboy") {
     leftSide.src = "GamerBoy.png";
   } else if (id === "knight") {
@@ -191,7 +191,7 @@ function setIconRight(id) {
   if (id === "pirate") {
     rightSide.src = "Pirate.png";
   } else if (id === "bigjosh") {
-    rightSide.src = "Big Josh.png";
+    rightSide.src = "BigJosh.png";
   } else if (id === "gamerboy") {
     rightSide.src = "GamerBoy.png";
   } else if (id === "knight") {
@@ -225,3 +225,4 @@ function nameRight() {
   nameTag2.innerText = inputValue;
   namePicker2.style.visibility = "hidden";
 }
+
